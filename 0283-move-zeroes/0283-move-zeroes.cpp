@@ -3,15 +3,15 @@ public:
  
     void moveZeroes(vector<int>& nums) {
         
-        int lastNonZeroFoundAt = -1;
+        int lastNonZeroFoundAt = -1;                    //j=lastNonZeroFoundAt
        
         int n = nums.size();
       
-        for (int currentIndex = 0; currentIndex < n; ++currentIndex) {
+        for (int i = 0; i < n; i++) {
             
-            if (nums[currentIndex] != 0) {
+            if (nums[i] != 0) {
                 
-                swap(nums[++lastNonZeroFoundAt], nums[currentIndex]);
+                swap(nums[++lastNonZeroFoundAt], nums[i]);
             }
         }
     }
