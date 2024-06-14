@@ -1,6 +1,3 @@
-#include <vector>
-using namespace std;
-
 class Solution {
 public:
  
@@ -10,15 +7,12 @@ public:
        
         int n = nums.size();
       
-       
         for (int currentIndex = 0; currentIndex < n; ++currentIndex) {
             
             if (nums[currentIndex] != 0) {
                 
                 swap(nums[++lastNonZeroFoundAt], nums[currentIndex]);
             }
-            
         }
-        
     }
 };
